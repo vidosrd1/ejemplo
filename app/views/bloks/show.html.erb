@@ -1,0 +1,18 @@
+<div class="container">
+  <h3><%= @blok.title %></h3>
+  <div id="navbar" class="1collapse">
+    <ul class="nav navbar-nav">
+      <li class="">
+        <p style="width:400px; heigh:200px">
+          <%= @blok.body %>
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <%= link_to 'Edit', edit_blok_path(@blok) %> |
+  <%= link_to 'Back', bloks_path %>
+
+  <%= button_to "Destroy this blok", @blok, method: :delete %>
+</div>

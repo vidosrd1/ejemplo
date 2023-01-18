@@ -1,0 +1,16 @@
+<div class="container">
+  <h3><%= @list.title %></h3>
+  <div id="navbar" class="1collapse">
+    <ul class="nav navbar-nav">
+      <li class="">
+        <p style="width:400px; heigh:200px">
+          <%= @list.body %>
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <%= link_to 'Edit', edit_post_path(@list) %> |
+  <%= link_to 'Back', lists_path %>
+</div>

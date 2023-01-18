@@ -1,0 +1,2 @@
+class Blok < ApplicationRecord
+end

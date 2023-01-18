@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @blok %>
+
+<div>
+  <%= link_to "Edit this blok", edit_blok_path(@blok) %> |
+  <%= link_to "Back to bloks", bloks_path %>
+
+  <%= button_to "Destroy this blok", @blok, method: :delete %>
+</div>
