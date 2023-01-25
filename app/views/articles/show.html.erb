@@ -7,7 +7,12 @@
   <h4><%= @article.name %></h4>  <h5<%= @article.publish %></h5>
   <div id="navbar" class="1collapse">
     <ul class="nav navbar-nav">
-      <li class="">
+       <li class="">
+        <p style="width:310px; heigh:310px">
+          <%= image_tag(@article.image, style:"width:300px; heigh:300px") %>
+        </p>
+      </li>
+     <li class="">
         <p style="width:400px; heigh:200px">
           <%= @article.body %>
         </p>
