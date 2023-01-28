@@ -10,5 +10,14 @@
     </p>
   <% end %>
 </div>
-
+<div class="container" style="padding:10px 20px 25px 0">
+</div>
 <%= link_to "New article", new_article_path %>
+<td>
+  <% if article.image? %>
+  <div class="message-image-container">
+    <%= link_to image_tag(article.image, style:"width:60px; heigh:60px"), article.image %>
+  </div>
+  <% end %>
+</td>
+<td style="width:30px; heigh:auto"></td>
